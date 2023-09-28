@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disable remainder</title>
+    <link rel="stylesheet" href="./assest/css/disableRemainder.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="editReminderForm">
+        <h1>Disable Reminder</h1>
+        <input type="hidden" id="reminderId" /><br />
+        <label for="dateInput">Select a Date:</label>
+        <input type="date" id="dateInput" required /><br /><br />
+
+        <label for="subjectSelect">Subject:</label>
+        <select id="subjectSelect" required>
+          <option value="">Select a subject</option>
+          <option value="Subject 1">Subject 1</option>
+          <option value="Subject 2">Subject 2</option>
+          <option value="Subject 3">Subject 3</option></select
+        ><br /><br />
+
+        <label for="descriptionTextarea">Description:</label><br />
+        <textarea id="descriptionTextarea" rows="4" required></textarea>
+        <button>
+          <a href="login.html" style="text-decoration: none">Back</a>
+        </button>
+        <button>
+          <a href="confirm.html" style="text-decoration: none">Confirm</a>
+        </button>
+        <button onclick="logout()">Logout</button>
+      </form>
+    </div>
+
+    <script src="./assest/js/DisableReminder.js"></script>
+  </body>
+</html>

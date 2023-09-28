@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Reminder</title>
+    <link rel="stylesheet" href="./assest/css/setRemainder.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="reminderForm">
+        <h1>New Reminder</h1>
+        <input type="number" hidden id="reminderId" /><br />
+        <label for="dateInput">Select a Date:</label>
+        <input type="date" id="dateInput" required /><br /><br />
+
+        <label for="subjectSelect">Subject:</label>
+        <select id="subjectSelect" required>
+          <option value="">Select a subject</option>
+          <option value="Shopping">Shopping</option>
+          <option value="Workout">Workout</option>
+          <option value="Office">Office</option></select
+        ><br /><br />
+
+        <label for="descriptionTextarea">Add description:</label><br />
+        <textarea id="descriptionTextarea" rows="4" required></textarea
+        ><br /><br />
+
+        <label for="emailInput">Email Address:</label>
+        <input type="email" id="emailInput" required /><br /><br />
+
+        <label for="contactNoInput">Contact No:</label>
+        <input type="tel" id="contactNoInput" required /><br /><br />
+
+        <label for="smsNoInput">SMS No:</label>
+        <input type="tel" id="smsNoInput" required /><br /><br />
+
+        <p>Recur for next:</p>
+        <input type="checkbox" id="7daysCheckbox" />
+        <label for="7daysCheckbox">7 Days</label><br />
+
+        <input type="checkbox" id="5daysCheckbox" />
+        <label for="5daysCheckbox">5 Days</label><br />
+
+        <input type="checkbox" id="3daysCheckbox" />
+        <label for="3daysCheckbox">3 Days</label><br />
+
+        <input type="checkbox" id="2daysCheckbox" />
+        <label for="2daysCheckbox">2 Days</label><br /><br />
+
+        <button type="submit">Set Reminder</button>
+        <button onclick="logout()">Logout</button>
+      </form>
+
+      <!-- <a href="logout.html">Log out</a> -->
+     
+    </div>
+    <script src="./assest/js/setRemainder.js"></script>
+  </body>
+</html>
